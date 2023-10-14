@@ -99,7 +99,7 @@
   background-image: url(./img/bg1.jpg);
   background-position: center;
   background-size: cover;
-  top: 50px;
+  top: 10px;
   width: 100%;
   height: 100%;
   }
@@ -136,7 +136,7 @@
   background-image: url(./img/bg1.jpg);
   background-position: center;
   background-size: cover;
-  top: 5vh;
+  top: 4vh;
   width: 100%;
   height: 100vh;
 }
@@ -144,9 +144,9 @@
 .fo1 {
   display: flex;
   position: relative;
-  top: 25vh;
+  top: 20vh;
   flex-direction: column;
-  left: 10px;
+  left: 40px;
   width: 20em;
   height: 25em;
   /* border: 3px solid black; */
