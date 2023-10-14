@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import {useNavigate} from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
 
 function LogIn(probs) {
     let navigation=useNavigate();
@@ -44,7 +44,7 @@ function LogIn(probs) {
                             <li><input type="email" className="form-control in" id="email" name="email" placeholder="Email" value={credetial.email} onChange={onChange} /></li>
                             <li><input type="password" className="form-control in" id="password" autoComplete='current-password' name="password" placeholder="password" value={credetial.password} onChange={onChange} /></li>
                             <li><button type="submit" className="form-control in sub" id="tag" name="tag" value="submit" >Submit</button></li>
-
+                            <Link className={`btn mx-1 btnsp`}role='button' type="submit" to='/signup'>SignUp</Link>
                         </ul>
                     </form>
                 </div>

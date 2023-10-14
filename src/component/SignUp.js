@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import {useNavigate} from 'react-router-dom'
+import {Link,useNavigate} from 'react-router-dom'
 
 function SignUp(probs) {
     let navigation=useNavigate();
@@ -46,6 +46,7 @@ function SignUp(probs) {
                                     <li><input type="password" className="form-control in" id="conpassword" name="conpassword" placeholder="Re-enter the password" autoComplete="current-password" required value={conpassword} onChange={onChange} /></li>
 
                                     <li><button type="submit" className="form-control in sub" id="tag" name="tag" value="submit" disabled={password!==conpassword} >Submit</button></li>
+                                    <Link className={`btn mx-1 btnsp`}role='button' type="submit" to='/login'>LogIn</Link>
 
                                 </ul>
                             </form>
