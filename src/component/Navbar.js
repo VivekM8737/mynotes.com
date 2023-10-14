@@ -43,8 +43,8 @@ function Navbar(props) {
                         {!localStorage.getItem('token')?<form className="d-flex" role="search">
                             {/* <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" /> */}
                             {/* <button className="btn btn-primary" type="submit">Search</button> */}
-                            <Link className={`btn btn-primary mx-1 ${location.pathname==='/signup'? "d-none":''}`}role='button' type="submit" to='/signup'>SignUp</Link>
-                            <Link className={`btn btn-primary mx-1 ${location.pathname==='/login'? "d-none":''}`}role='button' type="submit" to='/login'>LogIn</Link>
+                            {/* <Link className={`btn btn-primary mx-1 ${location.pathname==='/signup'? "d-none":''}`}role='button' type="submit" to='/signup'>SignUp</Link>
+                            <Link className={`btn btn-primary mx-1 ${location.pathname==='/login'? "d-none":''}`}role='button' type="submit" to='/login'>LogIn</Link> */}
                         </form>:<button className="btn btn-primary" type="button" onClick={handleLogout}>LogOut</button>}
 
                         <div className="form-check form-switch mx-1">
