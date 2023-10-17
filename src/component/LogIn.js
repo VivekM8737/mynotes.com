@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import {Link, useNavigate} from 'react-router-dom'
-const prt=process.env.REACT_APP_PORT;
+const prt=process.env.REACT_APP_PORT || 5000;
 function LogIn(probs) {
     let navigation=useNavigate();
     const {showAlert} = probs;

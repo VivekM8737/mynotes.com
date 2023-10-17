@@ -1,6 +1,6 @@
 import noteContext from "./noteContext"
 import { useState } from "react"
-const prt=process.env.REACT_APP_PORT;
+const prt=process.env.REACT_APP_PORT || 5000;
 const NoteState = (props) => {
     const { showAlert } = props;
     const host = `http://localhost:${prt}`
