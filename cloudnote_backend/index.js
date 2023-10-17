@@ -4,7 +4,9 @@ const express = require('express')
 conectToMongo();
 let app = express()
 app.use(cors())
-const port = 5000
+require("dotenv").config(); 
+const port = process.env.b_PORT
+console.log(port)
 app.use(express.json());
 app.use('/api/notes', require('./routes/notes'));
 app.use('/api/auth', require('./routes/auth'));

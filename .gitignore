@@ -5,7 +5,7 @@ node_modules
 /.pnp
 .pnp.js
 cloudnote_backend/routes/key.js
-
+.env
 # testing
 /coverage
 

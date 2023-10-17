@@ -1,8 +1,9 @@
 import noteContext from "./noteContext"
 import { useState } from "react"
+const prt=process.env.REACT_APP_PORT;
 const NoteState = (props) => {
     const { showAlert } = props;
-    const host = "http://localhost:5000"
+    const host = `http://localhost:${prt}`
     const notesInitial = []
     const [notes, setNotes] = useState(notesInitial)
     const getNotes = async () => {

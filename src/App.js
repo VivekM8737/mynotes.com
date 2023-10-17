@@ -14,7 +14,6 @@ import Alert from './component/Alert';
 import AddNote from './component/AddNote';
 import SignUp from './component/SignUp';
 import LogIn from './component/LogIn';
-
 function App() {
   const [myStyle, setStyle] = useState({
     backgroudColor: 'white',

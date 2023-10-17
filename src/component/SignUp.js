@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import {Link,useNavigate} from 'react-router-dom'
-
+const prt=process.env.REACT_APP_PORT;
 function SignUp(probs) {
     let navigation=useNavigate();
     const {showAlert} = probs;
@@ -9,7 +9,7 @@ function SignUp(probs) {
     const handalsubmit=async(e)=>{
         e.preventDefault();
         try {
-            const response = await fetch(`http://localhost:5000/api/auth/createUser`, {
+            const response = await fetch(`http://localhost:${prt}/api/auth/createUser`, {
                 method: "POST", // *GET, POST, PUT, DELETE, etc.
                 headers: {
                     "Content-Type": 'application/json'

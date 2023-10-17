@@ -8,7 +8,6 @@ function Notes(props) {
     let navigation = useNavigate();
     useEffect(() => {
         if (localStorage.getItem('token')) {
-            console.log(localStorage.getItem('token'))
             getNotes();
         }
         else {
